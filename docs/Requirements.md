@@ -66,39 +66,4 @@ Functional requirements describe specific behaviors and features of the system, 
 | FR-27 | Counter Performance | Dashboard shall show tokens-served-per-counter for performance comparison. | Low |
 | FR-28 | Peak Hour Analytics | System shall identify and display peak hours based on historical token generation trends. | Low |
 | FR-29 | Daily/Monthly Reports | System shall generate daily and monthly analytical reports of queue and counter activity. | Medium |
-FR-30 | PDF Report Export | System shall allow reports to be exported/downloaded as PDF. | Medium |
-| FR-31 | Excel Report Export | System shall allow tabular data (token history, analytics) to be exported as Excel (.xlsx). | Low |
-| FR-32 | Filtering & Pagination | System shall support filtering (date range, branch, counter, status) and pagination on all listing endpoints. | Medium |
-
----
-
-## 3. Non-Functional Requirements
-
-Non-functional requirements describe the quality, constraints, and characteristics of the system — how well it performs its functions rather than what those functions are.
-
-| ID | Category | Requirement | Target / Metric |
-|---|---|---|---|
-| NFR-01 | Performance | Core queue APIs (call next, generate token, queue status) shall respond quickly under normal load. | < 500 ms average response time |
-| NFR-02 | Performance | Dashboard and analytics queries shall not degrade the responsiveness of core queue operations. | < 1.5 s for aggregate queries |
-| NFR-03 | Scalability | System shall support multiple branches and concurrent customers per branch during peak hours. | 500+ concurrent users/branch |
-| NFR-04 | Scalability | Layered architecture shall allow horizontal scaling of the backend independent of the database. | Stateless REST layer |
-| NFR-05 | Security | All API endpoints (except login/public queue view) shall require a valid JWT. | 100% protected routes enforced |
-| NFR-06 | Security | Passwords shall never be stored or logged in plain text. | BCrypt, cost factor >= 10 |
-| NFR-07 | Security | Role-based authorization shall prevent Operators from accessing Admin-only endpoints. | Enforced via Spring Security |
-| NFR-08 | Reliability | The system shall remain available and consistent during business hours, with graceful error handling. | 99% uptime (business hours) |
-| NFR-09 | Reliability | Token numbering and queue state changes shall be atomic to prevent race conditions (e.g., two operators calling the same token). | No duplicate/lost tokens |
-| NFR-10 | Usability | The Operator queue screen shall be simple enough to use without formal training. | Max 3 clicks per action |
-| NFR-11 | Usability | The Customer-facing queue view shall be mobile-responsive. | Usable on screens >= 360px wide |
-| NFR-12 | Maintainability | Codebase shall follow layered architecture (Controller-Service-Repository) with DTOs, enabling new modules to be added without breaking existing ones. | Clear package separation |
-| NFR-13 | Maintainability | All REST APIs shall be documented via Swagger/OpenAPI for consistency and onboarding. | 100% endpoint coverage |
-| NFR-14 | Portability | The application shall be deployable across environments (local, cloud) with externalized configuration. | Environment-based config (.env/profiles) |
-| NFR-15 | Auditability | Key entities shall record creation and last-updated timestamps for traceability. | createdAt / updatedAt on all tables |
-| NFR-16 | Compatibility | Backend REST APIs shall be consumable by any standard HTTP client (React frontend, Postman, mobile apps in future). | JSON over REST, versioned APIs |
-
----
-
-## 4. Requirement Traceability Summary
-
-A total of 32 Functional Requirements and 16 Non-Functional Requirements have been identified across five modules and seven quality categories. High-priority functional requirements (Authentication, Token Generation, Queue Processing, Counter Management) form the MVP scope for the first development cycle; Medium and Low priority items are planned for subsequent iterations.
-
-> **Note:** This document is an extract of the full Software Requirement Specification (SRS), focused specifically on FR and NFR sections for quick reference and interview preparation.
+| FR-30 | PDF Report Export | System shall allow reports to be
