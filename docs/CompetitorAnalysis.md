@@ -1,6 +1,3 @@
-import os
-
-competitor_analysis_content = """# Competitor Analysis & Product Differentiation Specification (QueueFlow)
 
 This document analyzes existing industry standards in Queue Management Systems (QMS) against our proposed solution, **QueueFlow**. It outlines baseline commonalities, identifies market gaps, and provides engineering vectors to establish architectural superiority.
 
