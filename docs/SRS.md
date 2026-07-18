@@ -16,8 +16,41 @@ This document describes the objectives, scope, stakeholders, user roles, functio
 
 # 2. Problem Statement
 
-Many organizations such as hospitals, banks, clinics, government offices, and customer service centers still rely on manual queue management systems. These traditional methods often result in long waiting times, lack of queue transparency, inefficient counter management, and customer dissatisfaction.
+Many organizations such as hospitals, banks, clinics, government offices, and customer service centers still rely on manual queue management systems. These traditional methods often result in long waiting times, poor queue visibility, inefficient counter management, and customer dissatisfaction.
 
-Customers are unable to track their queue position or estimate their waiting time, while staff face difficulties in managing large numbers of visitors efficiently. Additionally, organizations have limited access to operational reports and analytics for improving their services.
+Customers often do not know their queue position or estimated waiting time, while staff struggle to manage large numbers of visitors efficiently. In addition, organizations lack proper reports and analytics to improve their services.
 
-Therefore, there is a need for a modern digital queue management system that streamlines queue operations, improves service efficiency, reduces waiting time, and enhances the overall customer experience.
+QueueFlow addresses these challenges by providing a secure digital queue management system that improves service efficiency, reduces waiting time, and enhances the overall customer experience.
+
+# 3. Objectives
+
+The main objectives of QueueFlow are:
+
+- Digitize the queue management process.
+- Reduce customer waiting time.
+- Improve service efficiency.
+- Provide real-time queue tracking.
+- Enable efficient counter management.
+- Generate reports and analytics.
+- Enhance customer satisfaction.
+- Improve resource utilization.
+
+# 4. Scope
+
+QueueFlow is designed for organizations that require efficient queue management, including hospitals, banks, clinics, government offices, and customer service centers.
+
+The system includes digital token generation, queue tracking, counter management, user authentication, dashboards, and reporting features.
+
+The current version does not include online appointment booking, payment processing, SMS notifications, or mobile applications. These features are considered part of the future scope.
+
+# 5. Stakeholders
+
+The major stakeholders of QueueFlow include:
+
+- Customers/Patients
+- Receptionists
+- Service Operators
+- Administrators
+- Organization Management
+- Development Team
+- Testing Team
