@@ -62,6 +62,7 @@ The QueueFlow system supports four primary user roles. Each role has specific re
 ## 6.1 Customer / Patient
 
 Responsibilities:
+
 - Generate a digital token.
 - View queue status and estimated waiting time.
 - Wait for service.
@@ -70,6 +71,7 @@ Responsibilities:
 ## 6.2 Receptionist
 
 Responsibilities:
+
 - Register customers.
 - Generate tokens.
 - Guide customers to the appropriate queue.
@@ -78,6 +80,7 @@ Responsibilities:
 ## 6.3 Service Operator
 
 Responsibilities:
+
 - Call the next token.
 - Provide the requested service.
 - Update the token status.
@@ -86,6 +89,7 @@ Responsibilities:
 ## 6.4 Administrator
 
 Responsibilities:
+
 - Manage users and counters.
 - Configure system settings.
 - View reports and dashboards.
@@ -100,6 +104,7 @@ The functional requirements describe the core features and operations that Queue
 The system shall allow authorized users to log in using a valid username and password.
 
 Acceptance Criteria:
+
 - Users must enter valid credentials.
 - Invalid credentials should display an error message.
 - Users shall be redirected to their respective dashboards based on their roles.
@@ -109,6 +114,7 @@ Acceptance Criteria:
 The system shall generate a unique digital token for every customer requesting a service.
 
 Acceptance Criteria:
+
 - Every token must have a unique number.
 - Token generation should take less than 2 seconds.
 - Generated tokens must be stored in the database.
@@ -118,6 +124,7 @@ Acceptance Criteria:
 The system shall maintain the queue automatically according to the generated token sequence.
 
 Acceptance Criteria:
+
 - Tokens shall be called in sequence.
 - Skipped tokens should be marked accordingly.
 - Completed tokens should be removed from the active queue.
@@ -127,6 +134,7 @@ Acceptance Criteria:
 The system shall display the customer's queue position and estimated waiting time in real time.
 
 Acceptance Criteria:
+
 - Customers should see their current queue position.
 - Waiting time should update automatically.
 
@@ -135,6 +143,7 @@ Acceptance Criteria:
 The system shall allow administrators to create, update, activate, or deactivate service counters.
 
 Acceptance Criteria:
+
 - New counters can be added.
 - Existing counters can be edited.
 - Inactive counters shall not receive new tokens.
@@ -144,6 +153,7 @@ Acceptance Criteria:
 The system shall allow service operators to call the next token, skip tokens when necessary, and mark services as completed.
 
 Acceptance Criteria:
+
 - Only active operators can call tokens.
 - Completed tokens should not appear again.
 
@@ -152,6 +162,7 @@ Acceptance Criteria:
 The system shall provide dashboards displaying queue statistics, active counters, waiting customers, and completed services.
 
 Acceptance Criteria:
+
 - Dashboard data should refresh automatically.
 - Administrators should have access to all reports.
 
@@ -160,6 +171,7 @@ Acceptance Criteria:
 The system shall generate daily and monthly operational reports.
 
 Acceptance Criteria:
+
 - Reports should include customer count.
 - Reports should include average waiting time.
 - Reports should include completed services.
@@ -169,6 +181,7 @@ Acceptance Criteria:
 The system shall provide access to features based on user roles.
 
 Acceptance Criteria:
+
 - Customers can only access customer features.
 - Receptionists can generate tokens.
 - Service Operators can manage queue operations.
@@ -179,6 +192,7 @@ Acceptance Criteria:
 The system shall notify customers when their token is approaching the service counter.
 
 Acceptance Criteria:
+
 - Notifications should appear before the customer's turn.
 - The notification should display the assigned counter number.
 
